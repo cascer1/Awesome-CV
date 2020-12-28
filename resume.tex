@@ -18,10 +18,10 @@
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
 % A4 paper size by default, use 'letterpaper' for US letter
-\documentclass[12pt, a4paper]{awesome-cv}
+\documentclass[11pt, a4paper]{awesome-cv}
 
 % Configure page margins with geometry
-\geometry{left=1.4cm, top=1.4cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
 
 % Specify the location of the included fonts
 \fontdir[fonts/]
@@ -29,16 +29,16 @@
 % Color for highlights
 % Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
 %                 awesome-nephritis, awesome-concrete, awesome-darknight
-\colorlet{awesome}{awesome-skyblue}
+\colorlet{awesome}{awesome-red}
 % Uncomment if you would like to specify your own color
 % \definecolor{awesome}{HTML}{CA63A8}
 
 % Colors for text
 % Uncomment if you would like to specify your own color
-% \definecolor{darktext}{HTML}{A52A2A}
+% \definecolor{darktext}{HTML}{414141}
 % \definecolor{text}{HTML}{333333}
-% \definecolor{graytext}{HTML}{FFBF00}
-% \definecolor{lighttext}{HTML}{11C9F4}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
 
 % Set false if you don't want to highlight section with awesome color
 \setbool{acvSectionColorHighlight}{true}
@@ -51,6 +51,8 @@
 %	PERSONAL INFORMATION
 %	Comment any of the lines below if they are not required
 %-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo[rectangle,edge,right]{./examples/profile}
 \name{Cas}{Eli\"{e}ns}
 % \position{Software Engineer{\enskip\cdotp\enskip}IT Automation}
 \position{Software Engineer}
@@ -62,9 +64,15 @@
 \github{cascer1}
 \linkedin{caseliens}
 \stackoverflow{2525319}{cas-eli\"{e}ns}
-% \twitter{@gregkitson}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
 % \skype{skype-id}
-% \reddit{cascer1}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
 % \extrainfo{extra informations}
 
 \quote{``Truth can only be found in one place: the code."}
@@ -74,7 +82,8 @@
 \begin{document}
 
 % Print the header with above personal informations
-\makecvheader
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[C]
 
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
